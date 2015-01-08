@@ -1,0 +1,10 @@
+<h1><%=@word.word%></h1>
+
+<%= render 'form' %>
+
+<h3>Neighbors: (<%= @neighbors.length %>) </h3>
+<% @neighbors.each do |neighbor| %>
+	<ul>
+		<li><%= neighbor.word %></li>
+	</ul>
+<% end %>
